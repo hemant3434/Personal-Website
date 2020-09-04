@@ -1,158 +1,295 @@
-Skip to content
-Search or jump to…
+:root {
+  --main-blue-color: rgb(0, 28, 85);
+  --main-gray-color: rgb(127, 121, 140);
+}
 
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@hemant3434 
-csc309-summer-2020
-/
-js-library-bhanothe
-Private
-2
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-js-library-bhanothe/pub/index.html
-@hemant3434
-hemant3434 fixed
-Latest commit 0635d88 7 days ago
- History
- 1 contributor
-128 lines (124 sloc)  3.91 KB
-  
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Ultimate-Grid</title>
+body {
+  background-color: rgb(237, 249, 254);
+  margin-top: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  padding-bottom: 10vh;
+}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+a {
+  text-decoration: none;
+}
 
-    <!-- Jquery from a Google CDN.  
-      If you don't use either async or defer, the DOM load is blocked until the script is downloaded and executed. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+p {
+  margin: 0;
+}
 
-    <!-- 'defer' says that the script should be loaded after the DOM is loaded.
-        If multiple scripts have 'defer', they are loaded one after the other.  -->
-    <!-- <script defer type="text/javascript" src="ultimate-grid.js"></script> -->
+.header {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
 
-    <!-- 'async' states that it is safe to load the script without blocking 
-          DOM loading.  Note that if multiple scripts are 'async', their order
-          of loading is not guaratneed (don't use async if one script depends
-          on the other). -->
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="header">
-      <table>
-        <tr>
-          <td>
-            <a href="index.html">Home</a>
-          </td>
-          <td>
-            <a href="documentation.html">Api Docs</a>
-          </td>
-          <td><a href="examples.html">Examples</a></td>
-        </tr>
-      </table>
-    </div>
-    <div class="title">
-      <table>
-        <tr>
-          <td><p class="ptitle">Ultimate-Grid.js</p></td>
-        </tr>
-        <tr>
-          <td>
-            <p class="psubtitle">
-              JavaScript Grid library for 2D draggable and swappable Grid
-              elements
-            </p>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <div class="features">
-      <table>
-        <tr>
-          <td>
-            <div class="card">
-              <table>
-                <tr>
-                  <td>
-                    <img src="images/drag.png" />
-                  </td>
-                </tr>
-                <tr>
-                  <td><p class="cardTitle">Draggable</p></td>
-                </tr>
-                <tr>
-                  <td class="cardText">
-                    <p>
-                      2D Grid element dragging system that works as a drag and
-                      drop to other grids with a custom scaling ease of drag
-                      factor
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </td>
-          <td>
-            <div class="card">
-              <table>
-                <tr>
-                  <td>
-                    <img src="images/swap.png" />
-                  </td>
-                </tr>
-                <tr>
-                  <td><p class="cardTitle">Swappable</p></td>
-                </tr>
-                <tr>
-                  <td class="cardText">
-                    <p>
-                      2D Grid element swapping system that works as a swap in
-                      conjunction with separate grid elements created with this
-                      library along with automatic resizing of individual grids
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </td>
-          <td>
-            <div class="card">
-              <table>
-                <tr>
-                  <td>
-                    <img src="images/lightbulb.png" />
-                  </td>
-                </tr>
-                <tr>
-                  <td><p class="cardTitle">Easy To Use</p></td>
-                </tr>
-                <tr>
-                  <td class="cardText">
-                    <p>
-                      Very easy to use ease yet has highly functional API's such
-                      as adding/removing/saving the grid state along with easy
-                      to follow documentation and steps
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </body>
-</html>
+.header > a > h1 {
+  color: black;
+  float: left;
+  margin: 0px;
+  font-weight: 400;
+  font-family: "Rouge Script", cursive;
+  font-size: 45px;
+}
+
+.header > table {
+  float: right;
+  max-width: 100%;
+  border-spacing: 60px 0px;
+  margin-top: 10px;
+}
+
+.header > table > tbody > tr > td > a > p {
+  margin: 0px;
+  font-family: "Rosarivo", serif;
+  color: black;
+  font-size: 18px;
+}
+
+.name {
+  text-align: center;
+  /* font */
+}
+
+.name > h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--main-blue-color);
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+
+  font-size: 80px;
+}
+
+.name > table {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.jobTitle {
+  margin: 0;
+  color: var(--main-blue-color);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.homeImg {
+  margin-left: 8px;
+  width: 44px;
+  height: 44px;
+}
+
+.intro {
+  text-align: justify;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.intro > p {
+  color: var(--main-gray-color);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  margin: 0;
+}
+
+.intro > p > span {
+  color: rgba(0, 28, 85, 0.8);
+  font-weight: 800;
+}
+
+.aboutMeImg {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+}
+
+.aboutCenter > table {
+  margin-right: auto;
+  margin-left: auto;
+  border-spacing: 10px 0px;
+}
+
+.aboutCenter {
+  margin-bottom: 20px;
+}
+
+.line {
+  margin-right: auto;
+  margin-left: auto;
+  height: 0.1em;
+  width: 50%;
+  background-color: var(--main-gray-color);
+  margin-bottom: 15px;
+}
+
+.aboutCenter > table > tbody > tr > td > h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--main-blue-color);
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  font-size: 40px;
+}
+
+.education {
+  text-align: center;
+}
+
+.education > h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--main-blue-color);
+  margin: 0px;
+  font-size: 30px;
+}
+
+.education > p {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--main-gray-color);
+  margin: 0px;
+  font-size: 18px;
+  margin-top: 3px;
+  font-weight: 600;
+}
+
+.exp_table_info > td > p {
+  color: var(--main-gray-color);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.exp_table_info > td:nth-child(1) {
+  text-align: left;
+}
+
+.exp_table_info > td:nth-child(2) {
+  text-align: right;
+}
+
+.exp_table_info > td {
+  padding-bottom: 18px;
+}
+
+.exp_table_company > td > p {
+  color: var(--main-blue-color);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.awards {
+  text-align: center;
+}
+
+.awards > p {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--main-gray-color);
+  margin: 0px;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.awards > p > span {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--main-blue-color);
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.certifications {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: max-content;
+}
+.certifications > a > p {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--main-blue-color);
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.certifications > p {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--main-gray-color);
+  margin: 0px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.ind_proj {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  border-spacing: 30px 0px;
+}
+
+.proj_card {
+  padding: 10px;
+  width: 600px;
+  height: 400px;
+  background-color: rgb(166, 225, 250);
+  box-shadow: 0px 5px 15px -10px;
+}
+
+.proj_card_header {
+  max-width: 100%;
+}
+
+.proj_card_header > tbody > tr > td > h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--main-blue-color);
+  margin: 0px;
+  font-size: 30px;
+}
+
+.proj_card_header > tbody > tr > td:nth-child(1) {
+  margin: 0px;
+  padding-right: 181px;
+}
+
+.proj_card_icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 3px;
+}
+
+.description > p {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--main-gray-color);
+  margin: 0px;
+  margin-left: 5px;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.description > p:nth-child(1) > span {
+  color: var(--main-blue-color);
+  font-weight: 900;
+}
+.description > p:nth-child(2) > span {
+  color: var(--main-blue-color);
+}
+
+.proj_img {
+  margin: 20px;
+}
+
+.proj_img > img {
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  width: 100%;
+}
