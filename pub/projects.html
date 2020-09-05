@@ -10,7 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Rouge+Script&family=Rosarivo&family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="index.css" />
+    <script defer type="text/javascript" src="animation.js"></script>
   </head>
   <body>
     <div class="header">
@@ -34,14 +36,13 @@
           <h1>Group Projects</h1>
         </td>
       </table>
-      <!-- <div class="line"></div> -->
       <div>
         <table class="ind_proj">
           <td>
             <div class="proj_card">
-              <table class="proj_card_header">
-                <td><h1>Virtual Queue</h1></td>
-                <td>
+              <div class="proj_card_header">
+                <h1>Virtual Queue</h1>
+                <div>
                   <a target="_blank" href="">
                     <img
                       class="proj_card_icon"
@@ -52,8 +53,8 @@
                       class="proj_card_icon"
                       src="icons/iconfinder_github_1632512.svg"
                   /></a>
-                </td>
-              </table>
+                </div>
+              </div>
               <div class="description">
                 <p>
                   <span>Tech:</span> Mongo, Express, React, Node, Google Cloud
@@ -67,15 +68,271 @@
                 </p>
               </div>
               <div class="proj_img">
-                <img src="project_images/virtual_queue1.png" />
+                <img
+                  class="w3-animate-right queue"
+                  src="project_images/virtual_queue1.png"
+                  style="height: 100%"
+                />
+                <img
+                  class="w3-animate-right queue"
+                  src="project_images/virtual_queue2.png"
+                />
+                <img
+                  class="w3-animate-right queue"
+                  src="project_images/virtual_queue3.png"
+                />
               </div>
             </div>
           </td>
           <td>
-            <div class="proj_card"></div>
+            <div class="proj_card">
+              <div class="proj_card_header">
+                <h1>Backend Spotify Clone</h1>
+                <div>
+                  <a target="_blank" href="https://github.com/hemant3434">
+                    <img
+                      class="proj_card_icon"
+                      src="icons/iconfinder_github_1632512.svg"
+                  /></a>
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  <span>Tech:</span> Java, Spring Boot, MongoDB, Neo4j Graph DB
+                </p>
+                <p>
+                  <span
+                    >API for a music application implemented using the
+                    microservice architecture. Profile microservice uses graph
+                    DB for following/unfollowing users. Song microservice uses
+                    Mongo DB for storing all songs.
+                  </span>
+                </p>
+              </div>
+              <div class="proj_img">
+                <img
+                  class="w3-animate-right spotify"
+                  src="project_images/spotify1.png"
+                />
+                <img
+                  class="w3-animate-right spotify"
+                  src="project_images/spotify2.png"
+                />
+              </div>
+            </div>
           </td>
         </table>
       </div>
+    </div>
+
+    <div class="aboutCenter">
+      <table>
+        <td>
+          <h1>Hackathon Projects</h1>
+        </td>
+      </table>
+      <!-- <div class="line"></div> -->
+      <div>
+        <table class="ind_proj">
+          <td>
+            <div class="proj_card">
+              <div class="proj_card_header">
+                <h1>Style Matcher</h1>
+                <div>
+                  <a
+                    target="_blank"
+                    href="https://devpost.com/software/matchmystyle"
+                  >
+                    <img
+                      class="proj_card_icon"
+                      src="icons/devpost-logo-646bdf6ac6663230947a952f8d354cad.svg"
+                  /></a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/hemant3434/Style-Matcher"
+                  >
+                    <img
+                      class="proj_card_icon"
+                      src="icons/iconfinder_github_1632512.svg"
+                  /></a>
+                </div>
+              </div>
+              <div class="description">
+                <p><span>Tech:</span> React, Google Cloud, Python, Flask</p>
+                <p>
+                  <span
+                    >Web application that aims to make clothes shopping
+                    effortless through a style matching algorithm. The backend
+                    integrates Google Vision API into an algorithm which matches
+                    user’s clothing style to the outlet’s collection</span
+                  >
+                </p>
+              </div>
+              <div class="proj_img">
+                <img
+                  class="w3-animate-right style"
+                  src="project_images/style-matcher1.jpg"
+                /><img
+                  class="w3-animate-right style"
+                  src="project_images/style-matcher2.jpg"
+                />
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="proj_card">
+              <div class="proj_card_header">
+                <h1>Sentiment Analyzer</h1>
+                <div>
+                  <a
+                    target="_blank"
+                    href="https://devpost.com/software/sensiment-oi3wbm"
+                  >
+                    <img
+                      class="proj_card_icon"
+                      src="icons/devpost-logo-646bdf6ac6663230947a952f8d354cad.svg"
+                  /></a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/hemant3434/Sentiment-Analyzer"
+                  >
+                    <img
+                      class="proj_card_icon"
+                      src="icons/iconfinder_github_1632512.svg"
+                  /></a>
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  <span>Tech:</span> React, Python, Google Cloud, Flask, IBM NLU
+                </p>
+                <p>
+                  <span
+                    >Web application that performs voice sentiment analysis in
+                    real time using Web Sockets and detects emotions such as
+                    anger or sadness by connecting IBM NLU and Google's Speech
+                    to Text API’s</span
+                  >
+                </p>
+              </div>
+              <div class="proj_img">
+                <img
+                  class="w3-animate-right sense"
+                  src="project_images/sense1.png"
+                />
+                <img
+                  class="w3-animate-right sense"
+                  src="project_images/sense2.png"
+                />
+              </div>
+            </div>
+          </td>
+        </table>
+      </div>
+    </div>
+
+    <div class="aboutCenter">
+      <table>
+        <td>
+          <h1>Personal Projects</h1>
+        </td>
+      </table>
+      <div>
+        <table class="ind_proj">
+          <td>
+            <div class="proj_card">
+              <div class="proj_card_header">
+                <h1>Security Alarm System</h1>
+                <div>
+                  <a
+                    target="_blank"
+                    href="https://github.com/hemant3434/Home-Security-System-Arduino-"
+                  >
+                    <img
+                      class="proj_card_icon"
+                      src="icons/iconfinder_github_1632512.svg"
+                  /></a>
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  <span>Tech:</span> Arduino, Sensors (PIR, IR, Bluetooth),
+                  C/C++
+                </p>
+                <p>
+                  <span
+                    >Security Alarm system built by connecting two Arduino
+                    microcontrollers via Bluetooth. Customizations for volume
+                    and quiet mode integrated via IR sensor and an LCD
+                    display</span
+                  >
+                </p>
+              </div>
+              <div class="proj_img">
+                <img
+                  class="w3-animate-right alarm"
+                  src="project_images/Breadboard-Master_bb.jpg"
+                />
+                <img
+                  class="w3-animate-right alarm"
+                  src="project_images/Breadboard-Master_schem.jpg"
+                />
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="proj_card">
+              <div class="proj_card_header">
+                <h1>JS Grid Library</h1>
+                <div>
+                  <a
+                    target="_blank"
+                    href="https://secure-dawn-43678.herokuapp.com/index.html"
+                  >
+                    <img
+                      class="proj_card_icon"
+                      src="icons/iconfinder_external-link_2561428.svg"
+                  /></a>
+                  <!-- TODO: Add GitHub to project once forked into personal repo -->
+                  <!-- <a
+                    target="_blank"
+                    href="https://github.com/hemant3434/Sentiment-Analyzer"
+                  >
+                    <img
+                      class="proj_card_icon"
+                      src="icons/iconfinder_github_1632512.svg"
+                  /></a> -->
+                </div>
+              </div>
+              <div class="description">
+                <p><span>Tech:</span> JavaScript, jQuery, HTML/CSS</p>
+                <p>
+                  <span
+                    >JS library which abstracts CSS grid creation and adds
+                    draggable/swap functionality to grid elements with an easy
+                    to use API.
+                  </span>
+                </p>
+              </div>
+              <div class="proj_img">
+                <img src="project_images/grid1.png" />
+              </div>
+            </div>
+          </td>
+        </table>
+      </div>
+    </div>
+    <div class="aboutCenter">
+      <table>
+        <td>
+          <a
+            target="_blank"
+            href="https://github.com/hemant3434?tab=repositories"
+          >
+            <h1>More Projects</h1>
+          </a>
+        </td>
+      </table>
     </div>
   </body>
 </html>
