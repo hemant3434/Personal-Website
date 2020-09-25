@@ -1,7 +1,7 @@
 "use strict";
 const log = console.log;
 
-let myIndex = [0, 0, 0, 0, 0];
+let myIndex = [0, 0, 0, 0, 0, 0];
 const CYCLE_TIME = 5000;
 carousel();
 
@@ -11,6 +11,7 @@ function carousel() {
   animate("alarm", 2);
   animate("sense", 3);
   animate("style", 4);
+  animate("grid-lib", 5);
 
   setTimeout(carousel, CYCLE_TIME);
 }
