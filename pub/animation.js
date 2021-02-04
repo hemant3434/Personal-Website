@@ -9,7 +9,7 @@ function carousel() {
   animate("queue", 0);
   animate("spotify", 1);
   animate("alarm", 2);
-  animate("sense", 3);
+  animate("fitmotiv", 3);
   animate("style", 4);
   animate("grid-lib", 5);
 
