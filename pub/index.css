@@ -179,6 +179,13 @@ p {
   margin: 0;
 }
 
+.exp_table_info > td > a > p{
+  color: var(--main-gray-color);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
 .exp_table_info > td:nth-child(1) {
   text-align: left;
 }
